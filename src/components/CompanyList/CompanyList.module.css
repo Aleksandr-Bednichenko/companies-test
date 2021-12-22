@@ -24,6 +24,10 @@
   border-radius: 16px;
   margin: 8px 9px;
   box-sizing: border-box;
+  transition: all 0.25s ease-in-out;
+}
+.companyItem:hover {
+  transform: scale(1.1);
 }
 
 .companyItemMy {
@@ -44,8 +48,11 @@
   border-radius: 16px;
   margin: 8px 9px;
   box-sizing: border-box;
+  transition: all 0.25s ease-in-out;
 }
-
+.companyItemMy:hover {
+  transform: scale(1.1);
+}
 .companyItemTitle {
   font-family: Ubuntu;
   font-style: normal;
