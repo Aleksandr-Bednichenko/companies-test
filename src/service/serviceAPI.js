@@ -1,17 +1,17 @@
 import axios from "axios";
 
+const BASE_URL = "https://localhost:5001/api/companies";
+
 function fetchCompany() {
-  return axios
-    .get("https://localhost:5001/api/companies/my")
-    .then((response) => {
-      return response.data;
-    });
+  return axios.get(`${BASE_URL}/my`).then((response) => {
+    return response.data;
+  });
 }
 
 function fetchAddMyCompany(registryCode) {
   return axios({
     method: "post",
-    url: "https://localhost:5001/api/companies",
+    url: `${BASE_URL}`,
     headers: {},
     data: {
       registryCode: registryCode,
